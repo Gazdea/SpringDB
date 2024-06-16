@@ -1,0 +1,18 @@
+
+a
+java:S5786"Remove this 'public' modifier.(ÓØ¡÷8‚ğê‚2J$f136fff2-3fbd-4445-b256-ae4d2b3d4899
+…
+java:S1128"=Remove this unused import 'org.junit.jupiter.api.BeforeEach'.(Ú’ èùÿÿÿÿ8Ş¬û‚2J$b4ed8f50-29a5-48ee-8478-e69f00018963
+¨
+java:S1128	"fRemove this unused import 'org.springframework.context.annotation.AnnotationConfigApplicationContext'.(€¡¹;8Ş¬û‚2J$a33e0598-cc6d-43f3-b9dd-fff5ce46ec36
+€
+java:S1128
+"=Remove this unused import 'tutko.spring.config.SpringConfig'.(ÍÆà²8Ş¬û‚2J$31641cc8-6b4f-484c-8a58-9e97b6dec3e1
+…
+java:S1128"=Remove this unused import 'tutko.spring.dto.ComponentMapper'.(ˆÚ“–ùÿÿÿÿ8Ş¬û‚2J$2b89d06a-0899-417d-9756-3e75eacd5b1a
+x
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8Ş¬û‚2J$58ada4a0-5eb5-494a-8a8d-32cb8a72ddf6
+u
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8Ş¬û‚2J$11f5f818-b577-4466-bc7d-2e8b424b0a1c
+w
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8’Ú‘‚2J$b1dd479e-cb6b-4da2-ae66-d3856329953a

@@ -1,0 +1,15 @@
+
+¶
+java:S1130+"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(˜´ï“úÿÿÿÿ8¦  ‚2J$6279cf67-0274-4835-90d9-0e700649c7f4
+¶
+java:S1130="nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ÁÑø‰úÿÿÿÿ8ƒ¡‚2J$a1b80e55-2292-4ba6-91f6-84dd3d9445cb
+Á
+java:S1130="yRemove the declaration of thrown exception 'jakarta.servlet.ServletException', as it cannot be thrown from method's body.(ÁÑø‰úÿÿÿÿ8¦  ‚2J$17a1083d-84b1-4ca4-b4cf-9efc3fbefeb4
+±
+java:S1130I"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(×¬ÑÃ8ƒ¡‚2J$2a0f4e9d-b198-4744-8358-64b0c56166e0
+¼
+java:S1130I"yRemove the declaration of thrown exception 'jakarta.servlet.ServletException', as it cannot be thrown from method's body.(×¬ÑÃ8ƒ¡‚2J$2c716d7f-65d3-4ebc-8708-21bad7127257
+±
+java:S1130U"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(Ô˜­8„¡‚2J$7f9073ec-580b-4d9d-b7e6-1a8851859a64
+¼
+java:S1130U"yRemove the declaration of thrown exception 'jakarta.servlet.ServletException', as it cannot be thrown from method's body.(Ô˜­8„¡‚2J$24502577-c535-4548-9dac-800c244321b2

@@ -1,0 +1,26 @@
+
+“
+java:S11920"PDefine a constant instead of duplicating this literal "/medicalrecords" 3 times.(§÷ªÜ8ù¼‰ğ2J$7f6ee0da-72e2-4f5f-9d83-89a25bdb792a
+~
+java:S1948"6Make "medicalRecordService" transient or serializable.(ìºˆšùÿÿÿÿ8¬¸“ï2J$a77d0fac-ee29-4875-9c9a-4af539398823
+¤
+java:S1989#"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(±³öø8•¶’ï2J$9fc5c98d-d620-49a4-979c-7ca272b812c9
+i	java:S131*""Add a default case to this switch.(ë´åİşÿÿÿÿ8ı¼‰ğ2J$4bc75939-19e0-44bc-b490-f9d737040406
+¡
+java:S1989,"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(íÓİÓùÿÿÿÿ8ş¼‰ğ2J$eadae0ee-3b88-4782-97d0-4fec706e645e
+–
+java:S19890"SHandle the following exception that could be thrown by "sendRedirect": IOException.(§÷ªÜ8ÿ¼‰ğ2J$65d7454f-4067-473a-912e-0f758f569eec
+”
+java:S19893"LHandle the following exception that could be thrown by "doPut": IOException.(èİå—ÿÿÿÿÿ8ÿ¼‰ğ2J$5b2ad48e-2181-49b7-85eb-279f39ba9bb4
+’
+java:S19896"OHandle the following exception that could be thrown by "doDelete": IOException.(´ˆª•8ÿ¼‰ğ2J$f63a94f0-7e3d-4767-bfa3-0804e95f99b9
+œ
+java:S1989>"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(·–ˆê8€½‰ğ2J$47eb89d1-6f7b-47a5-947c-77a082a0756b
+¡
+java:S1989?"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¸şÃ½ûÿÿÿÿ8€½‰ğ2J$f3167b23-f3a9-4bc1-bf92-1bab4e47abbc
+›
+java:S1989C"SHandle the following exception that could be thrown by "sendRedirect": IOException.(…Ñİÿÿÿÿÿ8€½‰ğ2J$af8db8eb-32a3-4efc-9341-77ae5cf84bc6
+¡
+java:S1989H"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(»‰¼ùşÿÿÿÿ8½‰ğ2J$c3d599bf-3f1b-428b-aa93-6920e78276ff
+›
+java:S1989J"SHandle the following exception that could be thrown by "sendRedirect": IOException.(…Ñİÿÿÿÿÿ8½‰ğ2J$b0ef8853-9bda-4574-8685-1c6d472f5fa4

@@ -1,0 +1,20 @@
+
+x
+java:S1948"5Make "medComponentService" transient or serializable.(ËÑùé8ÉğÂ‚2J$12336b90-c490-4e84-9797-562506756bbc
+“
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ë´åİşÿÿÿÿ8ÍğÂ‚2J$53c24958-1a3b-47ca-8c11-60e8583512b6
+i	java:S131""Add a default case to this switch.(ë´åİşÿÿÿÿ8ÍğÂ‚2J$ebe28950-28d3-43c0-94e9-f896ee2fc9bd
+¡
+java:S1989"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(§†Ãúÿÿÿÿ8ÍğÂ‚2J$67f81750-b718-45e3-a997-082a1accc330
+¡
+java:S1989 "YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¾‚ãÓøÿÿÿÿ8ÍğÂ‚2J$69a3795c-b4ce-48e6-9cc7-20c541dc9b0a
+›
+java:S1989""SHandle the following exception that could be thrown by "sendRedirect": IOException.(–¡­Çüÿÿÿÿ8ÍğÂ‚2J$466d594d-2f3d-4b5c-839f-563b0f8bcd55
+’
+java:S1989%"OHandle the following exception that could be thrown by "doDelete": IOException.(´ˆª•8ÍğÂ‚2J$ee58d864-a5ba-4249-88fb-0174c8570bd3
+œ
+java:S1989,"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ÏôûÀ8ÎğÂ‚2J$bbb681a5-8104-4373-aa36-d105d0fae771
+¡
+java:S1989-"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(’›÷¶úÿÿÿÿ8ÎğÂ‚2J$0dbd34d6-9992-4a35-82d4-9deed5ae140e
+–
+java:S1989/"SHandle the following exception that could be thrown by "sendRedirect": IOException.(Ù£–â8ÎğÂ‚2J$2c485268-fd24-4ab6-a3f7-b4de2be21ab9

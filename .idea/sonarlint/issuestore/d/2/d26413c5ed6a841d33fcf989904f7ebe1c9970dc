@@ -1,0 +1,34 @@
+
+—
+java:S11920"ODefine a constant instead of duplicating this literal "/prescriptions" 3 times.(½Îı©şÿÿÿÿ8¿§£ğ2J$3024a8d2-a343-4b72-a668-37dbc8f6df06
+w
+java:S1948"5Make "prescriptionService" transient or serializable.(äõôw8´¬Æï2J$0c5bf9f9-ba22-44c3-a435-d408315c6c6b
+©
+java:S1989""aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(©å«éşÿÿÿÿ8æâÅï2J$65c9ace5-1365-42f9-a6bb-154d86b60d5f
+i	java:S131)""Add a default case to this switch.(ë´åİşÿÿÿÿ8Ç§£ğ2J$65754281-16a9-4134-be75-3289ff40ff8a
+œ
+java:S1989+"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¥ºÕè8È§£ğ2J$2d12c092-01ee-44b3-8f30-f4e2392b3c37
+¡
+java:S1989,"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(”ï‡“ıÿÿÿÿ8É§£ğ2J$3c2d79ac-024e-44be-a2c9-2ee0137b021c
+›
+java:S19890"SHandle the following exception that could be thrown by "sendRedirect": IOException.(½Îı©şÿÿÿÿ8Í§£ğ2J$41715ce6-2aec-41fc-bfed-6ab17a0a9e31
+”
+java:S19893"LHandle the following exception that could be thrown by "doPut": IOException.(èİå—ÿÿÿÿÿ8Ï§£ğ2J$5200025d-210b-4e7b-946a-a95f32de4090
+’
+java:S19896"OHandle the following exception that could be thrown by "doDelete": IOException.(´ˆª•8Ï§£ğ2J$831dac11-b5c3-4237-8d06-5a1808225266
+y
+java:S1854A"7Remove this useless assignment to local variable "sdf".(¬ü¯-8»®´ğ2J$030fa5cb-34a8-4d7f-9b87-56e5909a877f
+¡
+java:S1989>"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(”ü¡ùÿÿÿÿ8Ï§£ğ2J$e33cec0b-f88d-4f09-a3e3-462ddb102142
+¡
+java:S1989?"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(‚¿çøÿÿÿÿ8Ï§£ğ2J$ee6240a1-bac8-4c55-96e4-d0f37a3551c4
+¡
+java:S1989@"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(íšï¼şÿÿÿÿ8Ï§£ğ2J$e6914a2e-c79b-4716-bef8-f38b3aa7ed74
+j
+java:S1481A"(Remove this unused "sdf" local variable.(¬ü¯-8½®´ğ2J$1d1f8cb8-b676-4630-bf50-2a6d2fa6a7cd
+›
+java:S1989E"SHandle the following exception that could be thrown by "sendRedirect": IOException.(×¤çíúÿÿÿÿ8Ï§£ğ2J$936628bf-eea0-4495-84e8-7b22aabb22ab
+¡
+java:S1989J"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(Ê‰Àâøÿÿÿÿ8Ï§£ğ2J$dfb494cd-4167-465e-bc88-22125bb7f862
+›
+java:S1989L"SHandle the following exception that could be thrown by "sendRedirect": IOException.(×¤çíúÿÿÿÿ8Ï§£ğ2J$b6120764-364a-4bc4-8933-c8c8e54007d6

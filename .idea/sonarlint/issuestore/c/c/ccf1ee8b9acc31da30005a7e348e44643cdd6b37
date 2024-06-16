@@ -1,0 +1,22 @@
+
+
+java:S1192,"LDefine a constant instead of duplicating this literal "/components" 3 times.(ÏğÎË8¥Æìï2J$ed8fc642-c610-4e60-aade-4c64a83eb487
+t
+java:S1948"2Make "componentService" transient or serializable.(íÖj8¼«±î2J$0c60acf8-a9ed-4251-a626-3e1aee0614c6
+©
+java:S1989 "aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ø‡Ûßúÿÿÿÿ8¾‚¹î2J$b96a1906-7b50-44f1-aa94-3074aa713879
+i	java:S131'""Add a default case to this switch.(ë´åİşÿÿÿÿ8é²Ôï2J$f0febd99-411f-4e08-9319-260aea8d3cfb
+–
+java:S1989,"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ÏğÎË8¢ÕÔï2J$8d8b891d-c4f0-4d6c-bbd9-8d4644211d1d
+”
+java:S1989/"LHandle the following exception that could be thrown by "doPut": IOException.(èİå—ÿÿÿÿÿ8ê²Ôï2J$4ddebe5f-cc6d-49f4-a01f-66211dde2f82
+’
+java:S19892"OHandle the following exception that could be thrown by "doDelete": IOException.(´ˆª•8ê²Ôï2J$9aaa6eb0-6f79-414f-96ed-fa5c0932fe07
+œ
+java:S1989:"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ê“ÙÑ8¡ÕÔï2J$3bdbd22f-6a6a-4aa1-ae20-dec053bb6b14
+›
+java:S1989>"SHandle the following exception that could be thrown by "sendRedirect": IOException.(Ó¤ãóıÿÿÿÿ8£ÕÔï2J$a4673127-6f2f-42bd-8659-6a14689b9756
+¡
+java:S1989C"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(Ëìñ‰øÿÿÿÿ8¢ÕÔï2J$9d6ef25d-2c1a-4d33-acda-ae053b1e5b57
+›
+java:S1989E"SHandle the following exception that could be thrown by "sendRedirect": IOException.(Ó¤ãóıÿÿÿÿ8¬Æìï2J$38b514b4-b745-41dc-9919-e89a8d29045d

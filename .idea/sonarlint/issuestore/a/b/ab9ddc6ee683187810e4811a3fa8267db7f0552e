@@ -1,0 +1,16 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïà¨úıÿÿÿÿ8›€»ğ2
+r	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ”°•ıÿÿÿÿ8›€»ğ2
+r	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’‘š÷şÿÿÿÿ8›€»ğ2
+Ÿ	java:S116"]Rename this field "date_of_prescribed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛŞÓã8ùÛä2J$927df84e-da20-40e3-afdf-a656ad41e4d4
+œ	java:S116
+"URename this field "patient_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¿†™şÿÿÿÿ8Ëâ¨ğ2J$8fd3e997-dbb0-4b52-9daf-084146bc1c68
+˜	java:S116"VRename this field "medicine_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôãƒà8Ëâ¨ğ2J$dd32a958-bfd4-4a38-a69b-63549f1cc0f0
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÇÅò©ùÿÿÿÿ8ùÛä2J$178881d5-c655-4bc8-836a-38d0dd5c5dcf
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÇ…Úøÿÿÿÿ8€»ğ2
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïà¨úıÿÿÿÿ8€»ğ2
+j	java:S100#"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×‘Øû8€»ğ2
+o	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ”°•ıÿÿÿÿ8€»ğ2
+o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•é Œùÿÿÿÿ8€»ğ2
+o	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’‘š÷şÿÿÿÿ8€»ğ2

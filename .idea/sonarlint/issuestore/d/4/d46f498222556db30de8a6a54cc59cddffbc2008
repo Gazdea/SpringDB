@@ -1,0 +1,15 @@
+
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ë‰¦üÿÿÿÿ8ù˜¯ï2J$fe89fd92-1f83-4399-b10e-21c30179d1cc
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·‘ú¹8Ëµ‰ä2J$790486af-dc39-4e23-917a-55aec50baa00
+“	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÿÍÆ8Ëµ‰ä2J$83e614b5-3307-46c2-a6be-525067e988e3
+›	java:S116"TRename this field "record_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í·É·ûÿÿÿÿ8‘¢‘î2J$25b2417e-6a4d-41ea-a222-db4e93ee7a6d
+›	java:S116"YRename this field "record_details" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à£²8Á¢—í2J$c5386dc8-9864-4a12-8f2a-19c72215aa1e
+œ	java:S116"URename this field "patient_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¿†™şÿÿÿÿ8†¾«ï2J$6a20a238-b379-4a6f-9c88-e25b334011e6
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘¿Îæ8­¤‚ä2J$3dc3d9c9-911d-41cd-847b-0b70c67ca5e5
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÇ…Úøÿÿÿÿ8û˜¯ï2J$6ab6c230-9403-467d-85d4-e5764f4b2006
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ë‰¦üÿÿÿÿ8û˜¯ï2J$82b95ee3-de9b-4d92-b72e-1038fc7375f3
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿õ‚ş8Îµ‰ä2J$b6642b64-47c5-4d01-b10d-666f6e376dae
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·‘ú¹8Ğµ‰ä2J$7748cc38-5170-41b3-82ed-a6a5865290c4
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“õÖ€8Ñµ‰ä2J$1481bb18-b690-4d4b-bd73-9e423019866b
+	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÿÍÆ8Óµ‰ä2J$4d7e2091-8b55-44bd-9ef4-877f0e19e86a

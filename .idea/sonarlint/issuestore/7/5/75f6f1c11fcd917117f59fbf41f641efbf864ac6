@@ -1,0 +1,7 @@
+
+“	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™«ρµ8ϊΏγο2J$b667ea7c-a24d-4f21-8e26-56c825087f2d
+	java:S116"WRename this field "component_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Φ¬§?8όΏγο2J$9cc3837d-f778-44ac-9f42-623a7cfec03d
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±½ªρύÿÿÿÿ8€ΐγο2J$a3fc2ad3-ac38-4b65-88a1-725e0aee02fe
+	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™«ρµ8€ΐγο2J$511034db-2314-4c84-a41d-6bf36f187625
+q
+java:S1128".Remove this unused import 'java.util.Objects'.(ΌΈυ›8‰ις‰‚2J$dd0ccfbe-1bb7-4cad-8439-31f2fa32d23b

@@ -1,0 +1,34 @@
+package tutko.spring.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import tutko.spring.dto.MedicalRecordDTO;
+import tutko.spring.dto.MedicationDTO;
+import tutko.spring.dto.MedicationMapper;
+import tutko.spring.entity.MedicationEntity;
+import tutko.spring.repositories.MedicationRepositories;
+
+import java.util.List;
+
+@Service
+public class MedicationService {
+
+    @Autowired
+    private MedicationRepositories medicationRepositories;
+
+    public MedicationDTO getmedicationById(int id) {
+        return MedicationMapper.toDTO(medicationRepositories.getReferenceById(id));
+    }
+
+    public List<MedicationDTO> getMedications() {
+        return MedicationMapper.toDTO(medicationRepositories.findAll());
+    }
+
+    public MedicationDTO saveMedication(MedicationDTO medicationDTO) {
+        return MedicationMapper.toDTO(medicationRepositories.save(MedicationMapper.toEntity(medicationDTO)));
+    }
+
+    public void deleteMedicationById(int id) {
+        medicationRepositories.deleteById(id);
+    }
+}

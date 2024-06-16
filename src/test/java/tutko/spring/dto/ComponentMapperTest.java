@@ -1,0 +1,45 @@
+package tutko.spring.dto;
+
+import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
+import tutko.spring.entity.ComponentEntity;
+
+public class ComponentMapperTest extends TestCase {
+
+    @Test
+    public void testToDTO() {
+        final ComponentDTO componentDTO = new ComponentDTO();
+        componentDTO.setComponent_id(0);
+        componentDTO.setName("name");
+        componentDTO.setDescription("description");
+
+        final ComponentEntity expectedResult = new ComponentEntity();
+        expectedResult.setComponent_id(0);
+        expectedResult.setName("name");
+        expectedResult.setDescription("description");
+
+        final ComponentDTO result = ComponentMapper.toDTO(expectedResult);
+
+        assertEquals(componentDTO.getName(), result.getName());
+        assertEquals(componentDTO.getDescription(), result.getDescription());
+    }
+
+    @Test
+    public void testToEntity() {
+        final ComponentDTO componentDTO = new ComponentDTO();
+        componentDTO.setComponent_id(0);
+        componentDTO.setName("name");
+        componentDTO.setDescription("description");
+
+        final ComponentEntity expectedResult = new ComponentEntity();
+        expectedResult.setComponent_id(0);
+        expectedResult.setName("name");
+        expectedResult.setDescription("description");
+
+        final ComponentEntity result = ComponentMapper.toEntity(componentDTO);
+
+        assertEquals(componentDTO.getName(), result.getName());
+        assertEquals(componentDTO.getDescription(), result.getDescription());
+    }
+
+}

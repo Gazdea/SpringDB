@@ -31,20 +31,20 @@
     <ta>
     <c:forEach var="medications" items="${medications}">
         <tr>
-            <td><input type="text" name="medicationId-${medications.medication_id}" value="${medications.medication_id}" disabled></td>
-            <td><input type="text" name="name-${medications.medication_id}" value="${medications.name}" disabled></td>
-            <td><input type="text" name="description-${medications.medication_id}" value="${medications.description}" disabled></td>
+            <td><input type="text" name="medicationId-${medications.medicationId}" value="${medications.medicationId}" disabled></td>
+            <td><input type="text" name="name-${medications.medicationId}" value="${medications.name}" disabled></td>
+            <td><input type="text" name="description-${medications.medicationId}" value="${medications.description}" disabled></td>
             <td>
                 <table>
                     <c:forEach var="component" items="${medications.componentDTOS}">
                         <tr>
-                            <input type="text" name="component-${component.component_id}" value="${component.name}" disabled>
+                            <input type="text" name="component-${component.componentId}" value="${component.name}" disabled>
                         </tr>
                         <tr>
                             <form action="medicationss" method="post">
                                 <input type="hidden" name="action" value="deletecomponent">
-                                <input type="hidden" name="deletecomponent_id" value="${component.component_id}">
-                                <input type="hidden" name="deletemedication_id" value="${medications.medication_id}">
+                                <input type="hidden" name="deletecomponentId" value="${component.componentId}">
+                                <input type="hidden" name="deletemedicationId" value="${medications.medicationId}">
                                 <input type="submit" value="Delete">
                             </form>
                         </tr>
@@ -52,10 +52,10 @@
                 </table>
             </td>
             <td>
-                <input type="button" value="Select" onclick="editMode(${medications.medication_id})">
+                <input type="button" value="Select" onclick="editMode(${medications.medicationId})">
                 <form action="medications" method="post">
                     <input type="hidden" name="action" value="delete">
-                    <input type="hidden" name="medicationId" value="${medications.medication_id}">
+                    <input type="hidden" name="medicationId" value="${medications.medicationId}">
                     <input type="submit" value="Delete">
                 </form>
             </td>

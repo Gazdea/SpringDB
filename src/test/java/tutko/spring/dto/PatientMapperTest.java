@@ -20,21 +20,21 @@ public class PatientMapperTest {
     public void testToDTO() {
         // Setup
         final PatientDTO patientDTO = new PatientDTO();
-        patientDTO.setPatient_id(0);
+        patientDTO.setPatientId(0);
         patientDTO.setName("name");
 
         final List<PrescriptionEntity> prescriptionEntities = new ArrayList<>();
         final MedicalRecordEntity medicationEntity = new MedicalRecordEntity();
 
         final PatientEntity expectedResult = new PatientEntity();
-        expectedResult.setPatient_id(0);
+        expectedResult.setPatientId(0);
         expectedResult.setName("name");
-        expectedResult.setBirth_date(new Date(1234));
+        expectedResult.setBirthDate(new Date(1234));
         expectedResult.setPrescriptionEntitys(prescriptionEntities);
         expectedResult.setMedicalRecordEntity(medicationEntity);
 
         // Run the test
-        final PatientDTO result = PatientMapper.toDTO(expectedResult);
+        final PatientDTO result = new PatientMapper().toDTO(expectedResult);
 
         // Verify the results
         assertEquals(result.getName(), expectedResult.getName());
@@ -45,22 +45,22 @@ public class PatientMapperTest {
         // Setup
         final PatientDTO patientDTO = new PatientDTO();
 
-        patientDTO.setPatient_id(0);
+        patientDTO.setPatientId(0);
         patientDTO.setName("name");
-        patientDTO.setBirth_date(new Date(1234));
+        patientDTO.setBirthDate(new Date(1234));
 
         final List<PrescriptionEntity> prescriptionEntities = new ArrayList<>();
         final MedicalRecordEntity medicationEntity = new MedicalRecordEntity();
 
         final PatientEntity expectedResult = new PatientEntity();
-        expectedResult.setPatient_id(0);
+        expectedResult.setPatientId(0);
         expectedResult.setName("name");
-        expectedResult.setBirth_date(new Date(1234));
+        expectedResult.setBirthDate(new Date(1234));
         expectedResult.setPrescriptionEntitys(prescriptionEntities);
         expectedResult.setMedicalRecordEntity(medicationEntity);
 
         // Run the test
-        final PatientEntity result = PatientMapper.toEntity(patientDTO);
+        final PatientEntity result = new PatientMapper().toEntity(patientDTO);
 
         // Verify the results
         assertEquals(result.getName(), expectedResult.getName());

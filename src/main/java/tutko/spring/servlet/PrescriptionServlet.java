@@ -13,7 +13,6 @@ import tutko.spring.service.PrescriptionService;
 
 import java.io.IOException;
 import java.sql.Date;
-import java.text.SimpleDateFormat;
 import java.util.List;
 
 @WebServlet("/prescriptions")
@@ -40,9 +39,9 @@ public class PrescriptionServlet extends HttpServlet {
         String action = request.getParameter("action");
             switch (action) {
                 case "add":
-                    prescriptionDTO.setPatient_id(Integer.parseInt(request.getParameter("addpatientID")));
-                    prescriptionDTO.setMedicine_id(Integer.parseInt(request.getParameter("addmedicationID")));
-                    prescriptionDTO.setDate_of_prescribed(Date.valueOf(request.getParameter("adddate_of_prescribed")));
+                    prescriptionDTO.setPatientId(Integer.parseInt(request.getParameter("addpatientID")));
+                    prescriptionDTO.setMedicineId(Integer.parseInt(request.getParameter("addmedicationID")));
+                    prescriptionDTO.setDate_of_prescribed(Date.valueOf(request.getParameter("adddateOfPrescribed")));
                     prescriptionDTO.setDosage(request.getParameter("adddosage"));
                     prescriptionService.savePrescription(prescriptionDTO);
                     response.sendRedirect("/prescriptions");
@@ -60,10 +59,9 @@ public class PrescriptionServlet extends HttpServlet {
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         PrescriptionDTO prescriptionDTO = new PrescriptionDTO();
         prescriptionDTO.setPrescriptionID(Integer.parseInt(req.getParameter("updateprescriptionID")));
-        prescriptionDTO.setPatient_id(Integer.parseInt(req.getParameter("updatepatientID")));
-        prescriptionDTO.setMedicine_id(Integer.parseInt(req.getParameter("updatemedicationID")));
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        prescriptionDTO.setDate_of_prescribed(Date.valueOf(req.getParameter("updatedate_of_prescribed")));
+        prescriptionDTO.setPatientId(Integer.parseInt(req.getParameter("updatepatientID")));
+        prescriptionDTO.setMedicineId(Integer.parseInt(req.getParameter("updatemedicationID")));
+        prescriptionDTO.setDate_of_prescribed(Date.valueOf(req.getParameter("updatedateOfPrescribed")));
         prescriptionDTO.setDosage(req.getParameter("updatedosage"));
         prescriptionService.savePrescription(prescriptionDTO);
         resp.sendRedirect("/prescriptions");

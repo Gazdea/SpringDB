@@ -28,8 +28,8 @@ public class MedicationDTOTest {
     @Test
     void testMedication_idGetterAndSetter() {
         final int medication_id = 0;
-        medicationDTOUnderTest.setMedication_id(medication_id);
-        assertEquals(medication_id, medicationDTOUnderTest.getMedication_id());
+        medicationDTOUnderTest.setMedicationId(medication_id);
+        assertEquals(medication_id, medicationDTOUnderTest.getMedicationId());
     }
 
     @Test

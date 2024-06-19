@@ -9,16 +9,16 @@ public class ComponentMapperTest extends TestCase {
     @Test
     public void testToDTO() {
         final ComponentDTO componentDTO = new ComponentDTO();
-        componentDTO.setComponent_id(0);
+        componentDTO.setComponentId(0);
         componentDTO.setName("name");
         componentDTO.setDescription("description");
 
         final ComponentEntity expectedResult = new ComponentEntity();
-        expectedResult.setComponent_id(0);
+        expectedResult.setComponentId(0);
         expectedResult.setName("name");
         expectedResult.setDescription("description");
 
-        final ComponentDTO result = ComponentMapper.toDTO(expectedResult);
+        final ComponentDTO result = new ComponentMapper().toDTO(expectedResult);
 
         assertEquals(componentDTO.getName(), result.getName());
         assertEquals(componentDTO.getDescription(), result.getDescription());
@@ -27,16 +27,16 @@ public class ComponentMapperTest extends TestCase {
     @Test
     public void testToEntity() {
         final ComponentDTO componentDTO = new ComponentDTO();
-        componentDTO.setComponent_id(0);
+        componentDTO.setComponentId(0);
         componentDTO.setName("name");
         componentDTO.setDescription("description");
 
         final ComponentEntity expectedResult = new ComponentEntity();
-        expectedResult.setComponent_id(0);
+        expectedResult.setComponentId(0);
         expectedResult.setName("name");
         expectedResult.setDescription("description");
 
-        final ComponentEntity result = ComponentMapper.toEntity(componentDTO);
+        final ComponentEntity result = new ComponentMapper().toEntity(componentDTO);
 
         assertEquals(componentDTO.getName(), result.getName());
         assertEquals(componentDTO.getDescription(), result.getDescription());

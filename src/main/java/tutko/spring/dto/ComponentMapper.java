@@ -1,37 +1,39 @@
 package tutko.spring.dto;
 
+import org.springframework.stereotype.Service;
 import tutko.spring.entity.ComponentEntity;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class ComponentMapper {
 
-    public static ComponentDTO toDTO(ComponentEntity componentEntity) {
+    public ComponentDTO toDTO(ComponentEntity componentEntity) {
         if (componentEntity == null) return null;
         ComponentDTO componentDTO = new ComponentDTO();
-        componentDTO.setComponent_id(componentEntity.getComponent_id());
+        componentDTO.setComponentId(componentEntity.getComponentId());
         componentDTO.setName(componentEntity.getName());
         componentDTO.setDescription(componentEntity.getDescription());
 
         return componentDTO;
     }
 
-    public static ComponentEntity toEntity(ComponentDTO componentDTO) {
+    public ComponentEntity toEntity(ComponentDTO componentDTO) {
         if (componentDTO == null) return null;
         ComponentEntity componentEntity = new ComponentEntity();
-        componentEntity.setComponent_id(componentDTO.getComponent_id());
+        componentEntity.setComponentId(componentDTO.getComponentId());
         componentEntity.setName(componentDTO.getName());
         componentEntity.setDescription(componentDTO.getDescription());
 
         return componentEntity;
     }
 
-    public static List<ComponentDTO> toDTO(List<ComponentEntity> componentEntities) {
-        return componentEntities.stream().map(ComponentMapper::toDTO).collect(Collectors.toList());
+    public List<ComponentDTO> toDTO(List<ComponentEntity> componentEntities) {
+        return componentEntities.stream().map(this::toDTO).collect(Collectors.toList());
     }
 
-    public static List<ComponentEntity> toEntity(List<ComponentDTO> componentDTOS) {
-        return componentDTOS.stream().map(ComponentMapper::toEntity).collect(Collectors.toList());
+    public List<ComponentEntity> toEntity(List<ComponentDTO> componentDTOS) {
+        return componentDTOS.stream().map(this::toEntity).collect(Collectors.toList());
     }
 }

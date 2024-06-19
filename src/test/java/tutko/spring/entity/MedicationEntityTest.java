@@ -15,13 +15,13 @@ class MedicationEntityTest {
         List<MedicationComponentEntity> medications = new ArrayList<>();
 
         MedicationEntity med = new MedicationEntity();
-        med.setMedication_id(1);
+        med.setMedicationId(1);
         med.setName("test");
         med.setDescription("test");
         med.setPrescriptionEntities(prescriptions);
         med.setMedicationComponentEntities(medications);
 
-        assertEquals(med.getMedication_id(), 1);
+        assertEquals(med.getMedicationId(), 1);
         assertEquals("test", med.getName());
         assertEquals("test", med.getDescription());
         assertEquals(med.getPrescriptionEntities(), prescriptions);

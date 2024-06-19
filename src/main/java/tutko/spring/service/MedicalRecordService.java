@@ -11,19 +11,23 @@ import java.util.List;
 @Service
 public class MedicalRecordService {
 
+    private final MedicalRecordRepositories medicalRecordRepositories;
+
     @Autowired
-    private MedicalRecordRepositories medicalRecordRepositories;
+    public MedicalRecordService(MedicalRecordRepositories medicalRecordRepositories) {
+        this.medicalRecordRepositories = medicalRecordRepositories;
+    }
 
     public MedicalRecordDTO getMedicalRecordById(int id) {
-        return MedicalRecordMapper.toDTO(medicalRecordRepositories.getReferenceById(id));
+        return new MedicalRecordMapper().toDTO(medicalRecordRepositories.getReferenceById(id));
     }
 
     public List<MedicalRecordDTO> getMedicalRecords() {
-        return MedicalRecordMapper.toDTO(medicalRecordRepositories.findAll());
+        return new MedicalRecordMapper().toDTO(medicalRecordRepositories.findAll());
     }
 
     public MedicalRecordDTO saveMedicalRecord(MedicalRecordDTO medicalRecordDTO) {
-        return MedicalRecordMapper.toDTO(medicalRecordRepositories.save(MedicalRecordMapper.toEntity(medicalRecordDTO)));
+        return new MedicalRecordMapper().toDTO(medicalRecordRepositories.save(new MedicalRecordMapper().toEntity(medicalRecordDTO)));
     }
 
     public void deleteMedicalRecord(int id) {

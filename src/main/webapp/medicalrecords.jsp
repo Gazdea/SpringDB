@@ -6,11 +6,11 @@
 </head>
 <script>
     function editMode(id) {
-        var patientid = document.getElementsByName('patient_id-' + id)[0].value;
-        var record_details = document.getElementsByName('record_details-' + id)[0].value;
-        var updaterecord_id = document.getElementsByName('updaterecord_id')[0];
-        var updatepatient_id = document.getElementsByName('updatepatient_id')[0];
-        var updaterecord_details = document.getElementsByName('updaterecord_details')[0];
+        var patientid = document.getElementsByName('patientId-' + id)[0].value;
+        var record_details = document.getElementsByName('recordDetails-' + id)[0].value;
+        var updaterecord_id = document.getElementsByName('updaterecordId')[0];
+        var updatepatient_id = document.getElementsByName('updatepatientId')[0];
+        var updaterecord_details = document.getElementsByName('updaterecordDetails')[0];
         updaterecord_id.value = id;
         updatepatient_id.value = patientid;
         updaterecord_details.value = record_details;
@@ -30,14 +30,14 @@
     <tbody>
     <c:forEach var="medicalrecords" items="${medicalrecords}">
         <tr>
-            <td><input type="text" name="record_id-${medicalrecords.record_id}" value="${medicalrecords.record_id}" disabled></td>
-            <td><input type="text" name="patient_id-${medicalrecords.record_id}" value="${medicalrecords.patient_id}" disabled></td>
-            <td><input type="text" name="record_details-${medicalrecords.record_id}" value="${medicalrecords.record_details}" disabled></td>
+            <td><input type="text" name="record_id-${medicalrecords.recordId}" value="${medicalrecords.recordId}" disabled></td>
+            <td><input type="text" name="patient_id-${medicalrecords.recordId}" value="${medicalrecords.patientId}" disabled></td>
+            <td><input type="text" name="record_details-${medicalrecords.recordId}" value="${medicalrecords.recordDetails}" disabled></td>
             <td>
-                <input type="button" value="Select" onclick="editMode(${medicalrecords.record_id})">
+                <input type="button" value="Select" onclick="editMode(${medicalrecords.recordId})">
                 <form action="medicalrecords" method="post">
                     <input type="hidden" name="action" value="delete">
-                    <input type="hidden" name="recordId" value="${medicalrecords.record_id}">
+                    <input type="hidden" name="recordId" value="${medicalrecords.recordId}">
                     <input type="submit" value="Delete">
                 </form>
             </td>
@@ -53,8 +53,8 @@
     <tr>
         <form action="medicalrecords" method="post">
             <input type="hidden" name="action" value="add">
-            <td> <input type="text" id="addpatient_id" name="patient_id" required> </td>
-            <td> <input type="text" id="addrecord_details" name="record_details" required> </td>
+            <td> <input type="text" id="addpatientId" name="patientId" required> </td>
+            <td> <input type="text" id="addrecordDetails" name="recordDetails" required> </td>
             <td> <input type="submit" value="Add"> </td>
         </form>
     </tr>
@@ -68,9 +68,9 @@
     <tr>
         <form action="medicalrecords" method="post">
             <input type="hidden" name="action" value="update">
-            <td> <input type="text" name="updaterecord_id" required></td>
-            <td> <input type="text" name="updatepatient_id" required> </td>
-            <td> <input type="text" name="updaterecord_details" required> </td>
+            <td> <input type="text" name="updaterecordId" required></td>
+            <td> <input type="text" name="updatepatientId" required> </td>
+            <td> <input type="text" name="updaterecordDetails" required> </td>
             <td> <input type="submit" name="update" value="Update"> </td>
         </form>
     </tr>

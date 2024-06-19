@@ -15,6 +15,7 @@ import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
+import java.util.Objects;
 import java.util.Properties;
 
 @Configuration
@@ -34,7 +35,7 @@ public class SpringConfig {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("database.driver"));
+        dataSource.setDriverClassName(Objects.requireNonNull(env.getProperty("database.driver")));
         dataSource.setUrl(env.getProperty("database.url"));
         dataSource.setUsername(env.getProperty("database.user"));
         dataSource.setPassword(env.getProperty("database.password"));

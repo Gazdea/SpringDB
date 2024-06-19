@@ -12,19 +12,23 @@ import java.util.List;
 @Service
 public class PatientService {
 
+    private final PatientRepositories patientRepositories;
+
     @Autowired
-    private PatientRepositories patientRepositories;
+    public PatientService(PatientRepositories patientRepositories) {
+        this.patientRepositories = patientRepositories;
+    }
 
     public PatientDTO getPatientById(int id) {
-        return PatientMapper.toDTO(patientRepositories.getReferenceById(id));
+        return new PatientMapper().toDTO(patientRepositories.getReferenceById(id));
     }
 
     public List<PatientDTO> getPatients() {
-        return PatientMapper.toDTO(patientRepositories.findAll());
+        return new PatientMapper().toDTO(patientRepositories.findAll());
     }
 
     public PatientDTO savePatient(PatientDTO patientDTO) {
-        return PatientMapper.toDTO(patientRepositories.save(PatientMapper.toEntity(patientDTO)));
+        return new PatientMapper().toDTO(patientRepositories.save(new PatientMapper().toEntity(patientDTO)));
     }
 
     public void deletePatient(int id) {

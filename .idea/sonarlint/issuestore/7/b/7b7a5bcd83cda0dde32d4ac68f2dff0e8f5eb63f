@@ -1,11 +1,5 @@
 
-a
-java:S5786+"Remove this 'public' modifier.(·Ë≠ó8Ω‰õçÇ2J$36930e58-b07b-433c-91fd-fb64618a3840
-±
-java:S1130+"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(·Ë≠ó8ñœúçÇ2J$c22eb7c6-dfe2-4981-a84c-4cc56a3dbf5c
-±
-java:S1130<"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(¯åéÄ8´ÁùçÇ2J$accd1f52-eb88-47a7-b281-69729fd0cfd5
-∂
-java:S1130H"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(€ÑÅÇˇˇˇˇˇ8æÄûçÇ2J$37fc4459-06c4-4ff5-96a5-2ea044992e8c
-±
-java:S1130S"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(¡ı±≥8—ñûçÇ2J$d460be4f-ddb4-4b45-af13-340f661a0593
+f
+java:S5786+"Remove this 'public' modifier.(æƒõœ˛ˇˇˇˇ8Ω‰õçÇ2J$b171d5d5-79ad-45d1-b26d-815f77d87135
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(€Ô∆ü8∏Â°ÄÉ2

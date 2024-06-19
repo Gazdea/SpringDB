@@ -40,10 +40,10 @@ class ComponentServletTest {
     }
 
     @Test
-    public void testDoGet() throws IOException, SQLException, ServletException {
+    public void testDoGet() throws IOException, ServletException {
         List<ComponentDTO> componentDTOList = new ArrayList<>();
         ComponentDTO componentDTO = new ComponentDTO();
-        componentDTO.setComponent_id(1);
+        componentDTO.setComponentId(1);
         componentDTO.setName("name");
         componentDTO.setDescription("description");
         componentDTOList.add(componentDTO);
@@ -57,7 +57,7 @@ class ComponentServletTest {
     }
 
     @Test
-    void testDoPost() throws IOException, SQLException {
+    void testDoPost() throws IOException {
         when(request.getParameter("addname")).thenReturn("name");
         when(request.getParameter("adddescription")).thenReturn("description");
         when(request.getParameter("action")).thenReturn("add");
@@ -69,7 +69,7 @@ class ComponentServletTest {
     }
 
     @Test
-    void testDoPut() throws IOException, SQLException {
+    void testDoPut() throws IOException {
         when(request.getParameter("updateid")).thenReturn("0");
         when(request.getParameter("updatename")).thenReturn("name");
         when(request.getParameter("updatedescription")).thenReturn("description");
@@ -80,7 +80,7 @@ class ComponentServletTest {
     }
 
     @Test
-    void testDoDelete() throws IOException, SQLException {
+    void testDoDelete() throws IOException {
         when(request.getParameter("componentId")).thenReturn("0");
         componentServlet.doDelete(request,response);
         verify(componentService).deleteComponent(0);

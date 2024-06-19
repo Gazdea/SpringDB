@@ -9,29 +9,29 @@ public class MedicalRecordDTOTest extends TestCase {
     @Test
     public void testRecord_idGetterAndSetter() {
         final int record_id = 0;
-        medicalRecordDTOUnderTest.setRecord_id(record_id);
-        assertEquals(record_id, medicalRecordDTOUnderTest.getRecord_id());
+        medicalRecordDTOUnderTest.setRecordId(record_id);
+        assertEquals(record_id, medicalRecordDTOUnderTest.getPatientId());
     }
 
     @Test
     public void testPatient_idGetterAndSetter() {
         final int patient_id = 0;
-        medicalRecordDTOUnderTest.setPatient_id(patient_id);
-        assertEquals(patient_id, medicalRecordDTOUnderTest.getPatient_id());
+        medicalRecordDTOUnderTest.setPatientId(patient_id);
+        assertEquals(patient_id, medicalRecordDTOUnderTest.getPatientId());
     }
 
     @Test
     public void testRecord_detailsGetterAndSetter() {
         final String record_details = "record_details";
-        medicalRecordDTOUnderTest.setRecord_details(record_details);
-        assertEquals(record_details, medicalRecordDTOUnderTest.getRecord_details());
+        medicalRecordDTOUnderTest.setRecordDetails(record_details);
+        assertEquals(record_details, medicalRecordDTOUnderTest.getRecordDetails());
     }
 
     @Test
     public void testRecord_idGetterAndSetter1() {
         final int record_id = 0;
-        medicalRecordDTOUnderTest.setRecord_id(record_id);
-        assertEquals(record_id, medicalRecordDTOUnderTest.getRecord_id());
+        medicalRecordDTOUnderTest.setRecordId(record_id);
+        assertEquals(record_id, medicalRecordDTOUnderTest.getRecordId());
     }
 
 }

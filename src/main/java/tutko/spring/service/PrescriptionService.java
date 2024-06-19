@@ -12,19 +12,23 @@ import java.util.List;
 @Service
 public class PrescriptionService {
 
+    private final PrescriptionRepositories prescriptionRepositories;
+
     @Autowired
-    private PrescriptionRepositories prescriptionRepositories;
+    public PrescriptionService(PrescriptionRepositories prescriptionRepositories) {
+        this.prescriptionRepositories = prescriptionRepositories;
+    }
 
     public PrescriptionDTO getPrescriptionById(int id) {
-        return PrescriptionMapper.toDTO(prescriptionRepositories.getReferenceById(id));
+        return new PrescriptionMapper().toDTO(prescriptionRepositories.getReferenceById(id));
     }
 
     public List<PrescriptionDTO> getPrescriptions() {
-        return PrescriptionMapper.toDTO(prescriptionRepositories.findAll());
+        return new PrescriptionMapper().toDTO(prescriptionRepositories.findAll());
     }
 
     public PrescriptionDTO savePrescription(PrescriptionDTO prescriptionDTO) {
-        return PrescriptionMapper.toDTO(prescriptionRepositories.save(PrescriptionMapper.toEntity(prescriptionDTO)));
+        return new PrescriptionMapper().toDTO(prescriptionRepositories.save(new PrescriptionMapper().toEntity(prescriptionDTO)));
     }
 
     public void deletePrescriptionById(int id) {

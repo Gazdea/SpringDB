@@ -45,9 +45,9 @@ class PatientServletTest {
     void testDoGet() throws ServletException, IOException, SQLException, ParseException {
         List<PatientDTO> patientDTOList = new ArrayList<>();
         PatientDTO patientDTO = new PatientDTO();
-        patientDTO.setPatient_id(1);
+        patientDTO.setPatientId(1);
         patientDTO.setName("John");
-        patientDTO.setBirth_date(new Date(1234));
+        patientDTO.setBirthDate(new Date(1234));
         patientDTOList.add(patientDTO);
 
         when(patientService.getPatients()).thenReturn(patientDTOList);

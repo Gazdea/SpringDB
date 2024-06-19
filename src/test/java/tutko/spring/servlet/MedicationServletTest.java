@@ -43,7 +43,7 @@ class MedicationServletTest {
     void testDoGet() throws IOException, ServletException, SQLException {
         List<MedicationDTO> medicationDTOList = new ArrayList<>();
         MedicationDTO medicationDTO = new MedicationDTO();
-        medicationDTO.setMedication_id(1);
+        medicationDTO.setMedicationId(1);
         medicationDTO.setName("name");
         medicationDTO.setDescription("description");
         medicationDTOList.add(medicationDTO);

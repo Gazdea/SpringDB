@@ -7,47 +7,46 @@ import tutko.spring.entity.PatientEntity;
 
 public class MedicalRecordMapperTest extends TestCase {
 
-
     @Test
     public void testToDTO() {
         // Setup
         final MedicalRecordDTO medicalRecordDTO = new MedicalRecordDTO();
-        medicalRecordDTO.setRecord_id(0);
-        medicalRecordDTO.setPatient_id(0);
-        medicalRecordDTO.setRecord_details("record_details");
+        medicalRecordDTO.setRecordId(0);
+        medicalRecordDTO.setPatientId(0);
+        medicalRecordDTO.setRecordDetails("record_details");
 
         final PatientEntity patientEntity = new PatientEntity();
-        patientEntity.setPatient_id(0);
+        patientEntity.setPatientId(0);
 
         final MedicalRecordEntity expectedResult = new MedicalRecordEntity();
-        expectedResult.setRecord_id(0);
+        expectedResult.setRecordId(0);
         expectedResult.setPatientEntity(patientEntity);
-        expectedResult.setRecord_details("record_details");
+        expectedResult.setRecordDetails("record_details");
 
         // Run the test
-        final MedicalRecordDTO result =  MedicalRecordMapper.toDTO(expectedResult);
+        final MedicalRecordDTO result = new MedicalRecordMapper().toDTO(expectedResult);
 
         // Verify the results
-        assertEquals(result.getRecord_details(), medicalRecordDTO.getRecord_details());
+        assertEquals(result.getRecordDetails(), medicalRecordDTO.getRecordDetails());
     }
 
     @Test
     public void testToEntity() {
         // Setup
         final MedicalRecordDTO medicalRecordDTO = new MedicalRecordDTO();
-        medicalRecordDTO.setRecord_id(0);
-        medicalRecordDTO.setPatient_id(0);
-        medicalRecordDTO.setRecord_details("record_details");
+        medicalRecordDTO.setRecordId(0);
+        medicalRecordDTO.setPatientId(0);
+        medicalRecordDTO.setRecordDetails("record_details");
 
         final MedicalRecordEntity expectedResult = new MedicalRecordEntity();
-        expectedResult.setRecord_id(0);
-        expectedResult.setRecord_details("record_details");
+        expectedResult.setRecordId(0);
+        expectedResult.setRecordDetails("record_details");
 
         // Run the test
-        final MedicalRecordEntity result = MedicalRecordMapper.toEntity(medicalRecordDTO);
+        final MedicalRecordEntity result = new MedicalRecordMapper().toEntity(medicalRecordDTO);
 
         // Verify the results
-        assertEquals(expectedResult.getRecord_details(), result.getRecord_details());
+        assertEquals(expectedResult.getRecordDetails(), result.getRecordDetails());
     }
 
 }

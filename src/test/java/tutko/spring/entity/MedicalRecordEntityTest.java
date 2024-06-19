@@ -11,12 +11,12 @@ class MedicalRecordEntityTest {
         PatientEntity patientEntity = new PatientEntity();
 
         MedicalRecordEntity medicalRecordEntity = new MedicalRecordEntity();
-        medicalRecordEntity.setRecord_id(1);
-        medicalRecordEntity.setRecord_details("test");
+        medicalRecordEntity.setRecordId(1);
+        medicalRecordEntity.setRecordDetails("test");
         medicalRecordEntity.setPatientEntity(patientEntity);
 
-        assertEquals(1, medicalRecordEntity.getRecord_id());
-        assertEquals("test", medicalRecordEntity.getRecord_details());
+        assertEquals(1, medicalRecordEntity.getRecordId());
+        assertEquals("test", medicalRecordEntity.getRecordDetails());
         assertEquals(patientEntity, medicalRecordEntity.getPatientEntity());
     }
 }

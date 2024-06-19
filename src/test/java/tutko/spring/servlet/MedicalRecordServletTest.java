@@ -43,9 +43,9 @@ class MedicalRecordServletTest {
     void testDoGet() throws ServletException, IOException, SQLException {
         List<MedicalRecordDTO> medicalRecordDTOList = new ArrayList<>();
         MedicalRecordDTO medicalRecordDTO = new MedicalRecordDTO();
-        medicalRecordDTO.setRecord_id(1);
-        medicalRecordDTO.setPatient_id(1);
-        medicalRecordDTO.setRecord_details("details");
+        medicalRecordDTO.setRecordId(1);
+        medicalRecordDTO.setPatientId(1);
+        medicalRecordDTO.setRecordDetails("details");
         medicalRecordDTOList.add(medicalRecordDTO);
 
         when(medicalRecordService.getMedicalRecords()).thenReturn(medicalRecordDTOList);

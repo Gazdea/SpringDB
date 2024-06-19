@@ -1,17 +1,15 @@
 package tutko.spring.dto;
 
-import java.util.List;
-
 public class ComponentDTO {
-    private int component_id;
+    private int componentId;
     private String name;
     private String description;
 
     public ComponentDTO() {
     }
 
-    public int getComponent_id() {
-        return component_id;
+    public int getComponentId() {
+        return componentId;
     }
 
     public String getName() {
@@ -22,8 +20,8 @@ public class ComponentDTO {
         return description;
     }
 
-    public ComponentDTO setComponent_id(int component_id) {
-        this.component_id = component_id;
+    public ComponentDTO setComponentId(int componentId) {
+        this.componentId = componentId;
         return this;
     }
 

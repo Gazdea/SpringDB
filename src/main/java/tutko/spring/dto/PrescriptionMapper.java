@@ -1,5 +1,6 @@
 package tutko.spring.dto;
 
+import org.springframework.stereotype.Service;
 import tutko.spring.entity.MedicationEntity;
 import tutko.spring.entity.PatientEntity;
 import tutko.spring.entity.PrescriptionEntity;
@@ -7,39 +8,40 @@ import tutko.spring.entity.PrescriptionEntity;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class PrescriptionMapper {
 
-    public static PrescriptionDTO toDTO(PrescriptionEntity prescription) {
+    public PrescriptionDTO toDTO(PrescriptionEntity prescription) {
         if (prescription == null) { return null; }
         PrescriptionDTO prescriptionDTO = new PrescriptionDTO();
-        prescriptionDTO.setPrescriptionID(prescription.getPrescription_id());
+        prescriptionDTO.setPrescriptionID(prescription.getPrescriptionId());
         prescriptionDTO.setDosage(prescription.getDosage());
-        prescriptionDTO.setDate_of_prescribed(prescription.getDate_prescribed());
+        prescriptionDTO.setDate_of_prescribed(prescription.getDatePrescribed());
         if(prescription.getMedicationEntity() != null) {
-            prescriptionDTO.setMedicine_id(prescription.getMedicationEntity().getMedication_id());
+            prescriptionDTO.setMedicineId(prescription.getMedicationEntity().getMedicationId());
         }
         if(prescription.getPatientEntity() != null) {
-            prescriptionDTO.setPatient_id(prescription.getPatientEntity().getPatient_id());
+            prescriptionDTO.setPatientId(prescription.getPatientEntity().getPatientId());
         }
         return prescriptionDTO;
     }
 
-    public static PrescriptionEntity toEntity(PrescriptionDTO prescriptionDTO) {
+    public PrescriptionEntity toEntity(PrescriptionDTO prescriptionDTO) {
         if (prescriptionDTO == null) { return null; }
         PrescriptionEntity prescriptionEntity = new PrescriptionEntity();
-        prescriptionEntity.setPrescription_id(prescriptionDTO.getPrescriptionID());
+        prescriptionEntity.setPrescriptionId(prescriptionDTO.getPrescriptionID());
         prescriptionEntity.setDosage(prescriptionDTO.getDosage());
-        prescriptionEntity.setDate_prescribed(prescriptionDTO.getDate_of_prescribed());
-        prescriptionEntity.setMedicationEntity(new MedicationEntity().setMedication_id(prescriptionDTO.getMedicine_id()));
-        prescriptionEntity.setPatientEntity(new PatientEntity().setPatient_id(prescriptionDTO.getPatient_id()));
+        prescriptionEntity.setDatePrescribed(prescriptionDTO.getDateOfPrescribed());
+        prescriptionEntity.setMedicationEntity(new MedicationEntity().setMedicationId(prescriptionDTO.getMedicineId()));
+        prescriptionEntity.setPatientEntity(new PatientEntity().setPatientId(prescriptionDTO.getPatientId()));
         return prescriptionEntity;
     }
 
-    public static List<PrescriptionDTO> toDTO(List<PrescriptionEntity> prescriptionEntities) {
-        return prescriptionEntities.stream().map(PrescriptionMapper::toDTO).collect(Collectors.toList());
+    public List<PrescriptionDTO> toDTO(List<PrescriptionEntity> prescriptionEntities) {
+        return prescriptionEntities.stream().map(this::toDTO).collect(Collectors.toList());
     }
 
-    public static List<PrescriptionEntity> toEntity(List<PrescriptionDTO> prescriptionDTOS) {
-        return prescriptionDTOS.stream().map(PrescriptionMapper::toEntity).collect(Collectors.toList());
+    public List<PrescriptionEntity> toEntity(List<PrescriptionDTO> prescriptionDTOS) {
+        return prescriptionDTOS.stream().map(this::toEntity).collect(Collectors.toList());
     }
 }

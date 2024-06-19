@@ -1,34 +1,32 @@
 package tutko.spring.dto;
 
-
 import java.sql.Date;
-import java.util.List;
 
 public class PatientDTO {
-    private int patient_id;
+    private int patientId;
     private String name;
-    private Date birth_date;
-    private MedicalRecordDTO medical_record;
+    private Date birthDate;
+    private MedicalRecordDTO medicalRecord;
 
     public PatientDTO() {
 
     }
 
-    public MedicalRecordDTO getMedical_record() {
-        return medical_record;
+    public MedicalRecordDTO getMedicalRecord() {
+        return medicalRecord;
     }
 
-    public PatientDTO setMedical_record(MedicalRecordDTO medical_record) {
-        this.medical_record = medical_record;
+    public PatientDTO setMedicalRecord(MedicalRecordDTO medicalRecord) {
+        this.medicalRecord = medicalRecord;
         return this;
     }
 
-    public int getPatient_id() {
-        return patient_id;
+    public int getPatientId() {
+        return patientId;
     }
 
-    public PatientDTO setPatient_id(int patient_id) {
-        this.patient_id = patient_id;
+    public PatientDTO setPatientId(int patientId) {
+        this.patientId = patientId;
         return this;
     }
 
@@ -41,12 +39,12 @@ public class PatientDTO {
         return this;
     }
 
-    public Date getBirth_date() {
-        return birth_date;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public PatientDTO setBirth_date(Date birth_date) {
-        this.birth_date = birth_date;
+    public PatientDTO setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
         return this;
     }
 }

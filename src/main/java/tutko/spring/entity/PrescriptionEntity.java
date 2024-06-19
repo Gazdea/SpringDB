@@ -10,9 +10,11 @@ public class PrescriptionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int prescription_id;
+    @Column(name = "prescription_id")
+    private int prescriptionId;
 
-    private Date date_prescribed;
+    @Column(name = "date_prescribed")
+    private Date datePrescribed;
 
     private String dosage;
 
@@ -24,21 +26,21 @@ public class PrescriptionEntity {
     @JoinColumn(name = "medication_id")
     MedicationEntity medicationEntity;
 
-    public int getPrescription_id() {
-        return prescription_id;
+    public int getPrescriptionId() {
+        return prescriptionId;
     }
 
-    public PrescriptionEntity setPrescription_id(int prescription_id) {
-        this.prescription_id = prescription_id;
+    public PrescriptionEntity setPrescriptionId(int prescriptionId) {
+        this.prescriptionId = prescriptionId;
         return this;
     }
 
-    public Date getDate_prescribed() {
-        return date_prescribed;
+    public Date getDatePrescribed() {
+        return datePrescribed;
     }
 
-    public PrescriptionEntity setDate_prescribed(Date date_prescribed) {
-        this.date_prescribed = date_prescribed;
+    public PrescriptionEntity setDatePrescribed(Date datePrescribed) {
+        this.datePrescribed = datePrescribed;
         return this;
     }
 

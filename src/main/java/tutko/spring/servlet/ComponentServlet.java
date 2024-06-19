@@ -14,6 +14,7 @@ import tutko.spring.service.ComponentService;
 import java.io.IOException;
 import java.util.List;
 
+
 @WebServlet("/components")
 public class ComponentServlet extends HttpServlet {
     private ComponentService componentService;
@@ -55,7 +56,7 @@ public class ComponentServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         ComponentDTO componentDTO = new ComponentDTO();
-        componentDTO.setComponent_id(Integer.parseInt(req.getParameter("updateid")));
+        componentDTO.setComponentId(Integer.parseInt(req.getParameter("updateid")));
         componentDTO.setName(req.getParameter("updatename"));
         componentDTO.setDescription(req.getParameter("updatedescription"));
         componentService.saveComponent(componentDTO);

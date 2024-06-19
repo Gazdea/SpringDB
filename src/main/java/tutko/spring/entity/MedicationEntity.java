@@ -9,7 +9,8 @@ import java.util.List;
 public class MedicationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int medication_id;
+    @Column(name = "medication_id")
+    private int medicationId;
 
     private String name;
 
@@ -21,12 +22,12 @@ public class MedicationEntity {
     @OneToMany(mappedBy = "medicationEntity", fetch = FetchType.EAGER)
     private List<PrescriptionEntity> prescriptionEntities;
 
-    public int getMedication_id() {
-        return medication_id;
+    public int getMedicationId() {
+        return medicationId;
     }
 
-    public MedicationEntity setMedication_id(int medication_id) {
-        this.medication_id = medication_id;
+    public MedicationEntity setMedicationId(int medicationId) {
+        this.medicationId = medicationId;
         return this;
     }
 

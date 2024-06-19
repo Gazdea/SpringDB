@@ -12,21 +12,25 @@ import java.util.List;
 @Service
 public class ComponentService {
 
+    private final ComponentRepositories componentRepositories;
+
     @Autowired
-    private ComponentRepositories componentRepositories;
+    public ComponentService(ComponentRepositories componentRepositories) {
+        this.componentRepositories = componentRepositories;
+    }
 
     @Transactional(readOnly = true)
     public ComponentDTO getComponentById(int id) {
-        return ComponentMapper.toDTO(componentRepositories.getReferenceById(id));
+        return new ComponentMapper().toDTO(componentRepositories.getReferenceById(id));
     }
 
     @Transactional(readOnly = true)
     public List<ComponentDTO> getComponents() {
-        return ComponentMapper.toDTO(componentRepositories.findAll());
+        return new ComponentMapper().toDTO(componentRepositories.findAll());
     }
 
     public ComponentDTO saveComponent(ComponentDTO componentDTO) {
-        return ComponentMapper.toDTO(componentRepositories.save(ComponentMapper.toEntity(componentDTO)));
+        return new ComponentMapper().toDTO(componentRepositories.save(new ComponentMapper().toEntity(componentDTO)));
     }
 
     public void deleteComponent(int id) {

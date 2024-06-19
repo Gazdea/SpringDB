@@ -1,12 +1,3 @@
 
-“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¦–8å¡åá2J$184809da-f93b-4a34-aca3-8ea3356d561f
-˜	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙµÆÆøÿÿÿÿ8Åƒáá2J$eec186f5-ef36-4a40-96a1-8f600cca9a54
-›	java:S116
-"TRename this field "record_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í·É·ûÿÿÿÿ8Çƒáá2J$fcd10860-0052-4c62-9134-7910c01ebcbb
-›	java:S116"YRename this field "record_details" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à£²8ë¡åá2J$fb4ce224-f192-48ef-b980-6cea6404d3fd
 É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈïË»ûÿÿÿÿ8ë¡åá2J$095c41c2-f0fc-48f1-a3fa-683e966548d8
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿õ‚ş8ë¡åá2J$baa573ba-8910-4d13-9e07-0687442e3fc3
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¦–8ë¡åá2J$26ce0e20-7988-468c-b312-289b33e14c01
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“õÖ€8Çƒáá2J$bafa8109-1d8a-40ba-824b-4a61bf254a32
-•	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙµÆÆøÿÿÿÿ8Çƒáá2J$722169de-c503-4bb3-b947-95dda40b476a
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈïË»ûÿÿÿÿ8ë¡åá2J$3eedbbb4-2bdf-4c84-9b64-359acd3a417c

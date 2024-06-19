@@ -3,7 +3,7 @@ package tutko.spring.dto;
 import java.util.List;
 
 public class MedicationDTO {
-    private int medication_id;
+    private int medicationId;
     private String name;
     private String description;
     private List<ComponentDTO> componentDTOS;
@@ -22,12 +22,12 @@ public class MedicationDTO {
 
     }
 
-    public int getMedication_id() {
-        return medication_id;
+    public int getMedicationId() {
+        return medicationId;
     }
 
-    public MedicationDTO setMedication_id(int medication_id) {
-        this.medication_id = medication_id;
+    public MedicationDTO setMedicationId(int medicationId) {
+        this.medicationId = medicationId;
         return this;
     }
 

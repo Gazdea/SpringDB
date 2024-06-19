@@ -41,8 +41,8 @@ public class MedicalRecordServlet extends HttpServlet {
         String action = request.getParameter("action");
         switch (action) {
             case "add":
-                medicalRecordDTO.setPatient_id(Integer.parseInt(request.getParameter("patient_id")));
-                medicalRecordDTO.setRecord_details(request.getParameter("record_details"));
+                medicalRecordDTO.setPatientId(Integer.parseInt(request.getParameter("patientId")));
+                medicalRecordDTO.setRecordDetails(request.getParameter("recordDetails"));
                 medicalRecordService.saveMedicalRecord(medicalRecordDTO);
 
                 response.sendRedirect("/medicalrecords");
@@ -59,9 +59,9 @@ public class MedicalRecordServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         MedicalRecordDTO medicalRecordDTO = new MedicalRecordDTO();
-        medicalRecordDTO.setRecord_id(Integer.parseInt(req.getParameter("updaterecord_id")));
-        medicalRecordDTO.setPatient_id(Integer.parseInt(req.getParameter("updatepatient_id")));
-        medicalRecordDTO.setRecord_details(req.getParameter("updaterecord_details"));
+        medicalRecordDTO.setRecordId(Integer.parseInt(req.getParameter("updaterecordId")));
+        medicalRecordDTO.setPatientId(Integer.parseInt(req.getParameter("updatepatientId")));
+        medicalRecordDTO.setRecordDetails(req.getParameter("updaterecord_details"));
         medicalRecordService.saveMedicalRecord(medicalRecordDTO);
 
         resp.sendRedirect("/medicalrecords");

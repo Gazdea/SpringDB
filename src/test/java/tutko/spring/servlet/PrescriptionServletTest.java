@@ -45,8 +45,8 @@ class PrescriptionServletTest {
         List<PrescriptionDTO> prescriptions = new ArrayList<>();
         PrescriptionDTO prescriptionDTO = new PrescriptionDTO();
         prescriptionDTO.setPrescriptionID(1);
-        prescriptionDTO.setPatient_id(1);
-        prescriptionDTO.setMedicine_id(1);
+        prescriptionDTO.setPatientId(1);
+        prescriptionDTO.setMedicineId(1);
         prescriptionDTO.setDate_of_prescribed(new Date(1234));
         prescriptionDTO.setDosage("dosage");
         prescriptions.add(prescriptionDTO);

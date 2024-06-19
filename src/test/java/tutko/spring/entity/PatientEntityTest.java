@@ -16,15 +16,15 @@ class PatientEntityTest {
         List<PrescriptionEntity> prescriptionEntity = new ArrayList<>();
 
         PatientEntity patientEntity = new PatientEntity();
-        patientEntity.setPatient_id(1);
+        patientEntity.setPatientId(1);
         patientEntity.setName("test");
-        patientEntity.setBirth_date(new Date(1234));
+        patientEntity.setBirthDate(new Date(1234));
         patientEntity.setMedicalRecordEntity(medicalRecordEntity);
         patientEntity.setPrescriptionEntitys(prescriptionEntity);
 
-        assertEquals(patientEntity.getPatient_id(), 1);
+        assertEquals(patientEntity.getPatientId(), 1);
         assertEquals(patientEntity.getName(), "test");
-        assertEquals(patientEntity.getBirth_date(), new Date(1234));
+        assertEquals(patientEntity.getBirthDate(), new Date(1234));
         assertEquals(patientEntity.getMedicalRecordEntity(), medicalRecordEntity);
         assertEquals(patientEntity.getPrescriptionEntitys(), prescriptionEntity);
 

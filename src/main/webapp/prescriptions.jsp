@@ -8,12 +8,12 @@
     function editMode(id) {
         var patientID = document.getElementsByName('patientID-' + id)[0].value;
         var medicationID = document.getElementsByName('medicationID-' + id)[0].value;
-        var date_of_prescribed = document.getElementsByName('date_of_prescribed-' + id)[0].value;
+        var date_of_prescribed = document.getElementsByName('dateOfPrescribed-' + id)[0].value;
         var dosage = document.getElementsByName('dosage-' + id)[0].value;
         var updateprescriptionID = document.getElementsByName('updateprescriptionID')[0];
         var updatepatientID = document.getElementsByName('updatepatientID')[0];
         var updatemedicationID = document.getElementsByName('updatemedicationID')[0];
-        var updatedate_of_prescribed = document.getElementsByName('updatedate_of_prescribed')[0];
+        var updatedate_of_prescribed = document.getElementsByName('updatedateOfPrescribed')[0];
         var updatedosage = document.getElementsByName('updatedosage')[0];
         updateprescriptionID.value = id;
         updatepatientID.value = patientID;
@@ -39,9 +39,9 @@
     <c:forEach var="prescriptions" items="${prescriptions}">
         <tr>
             <td><input type="text" name="prescriptionID-${prescriptions.prescriptionID}" value="${prescriptions.prescriptionID}" disabled></td>
-            <td><input type="text" name="patientID-${prescriptions.prescriptionID}" value="${prescriptions.patient_id}" disabled></td>
-            <td><input type="text" name="medicationID-${prescriptions.prescriptionID}" value="${prescriptions.medicine_id}" disabled></td>
-            <td><input type="date" name="date_of_prescribed-${prescriptions.prescriptionID}" value="${prescriptions.date_of_prescribed}" disabled></td>
+            <td><input type="text" name="patientID-${prescriptions.prescriptionID}" value="${prescriptions.patientId}" disabled></td>
+            <td><input type="text" name="medicationID-${prescriptions.prescriptionID}" value="${prescriptions.medicineId}" disabled></td>
+            <td><input type="date" name="date_of_prescribed-${prescriptions.prescriptionID}" value="${prescriptions.dateOfPrescribed}" disabled></td>
             <td><input type="text" name="dosage-${prescriptions.prescriptionID}" value="${prescriptions.dosage}" disabled></td>
             <td>
                     <input type="submit" value="Select" onclick="editMode(${prescriptions.prescriptionID})">
@@ -67,7 +67,7 @@
             <input type="hidden" name="action" value="add">
             <td><input type="text" name="addpatientID" required></td>
             <td><input type="text" name="addmedicationID" required></td>
-            <td><input type="date" name="adddate_of_prescribed" required></td>
+            <td><input type="date" name="adddateOfPrescribed" required></td>
             <td><input type="text" name="adddosage" required></td>
             <td><input type="submit" value="Add"></td>
         </form>
@@ -87,7 +87,7 @@
             <td><input type="text" name="updateprescriptionID" required></td>
             <td><input type="text" name="updatepatientID" required></td>
             <td><input type="text" name="updatemedicationID" required></td>
-            <td><input type="date" name="updatedate_of_prescribed" required></td>
+            <td><input type="date" name="updatedateOfPrescribed" required></td>
             <td><input type="text" name="updatedosage" required></td>
             <td><input type="submit" value="Update"></td>
         </form>

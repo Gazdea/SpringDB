@@ -43,7 +43,7 @@ public class PatientServlet extends HttpServlet {
         switch (action) {
             case "add":
                 patientDTO.setName(request.getParameter("addname"));
-                patientDTO.setBirth_date(Date.valueOf(request.getParameter("addbirth_date")));
+                patientDTO.setBirthDate(Date.valueOf(request.getParameter("addbirthDate")));
                 patientService.savePatient(patientDTO);
                 response.sendRedirect("/patients");
                 break;
@@ -59,9 +59,9 @@ public class PatientServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         PatientDTO patientDTO = new PatientDTO();
-        patientDTO.setPatient_id(Integer.parseInt(req.getParameter("updatepatientId")));
+        patientDTO.setPatientId(Integer.parseInt(req.getParameter("updatepatientId")));
         patientDTO.setName(req.getParameter("updatename"));
-        patientDTO.setBirth_date(Date.valueOf(req.getParameter("updatebirth_date")));
+        patientDTO.setBirthDate(Date.valueOf(req.getParameter("updatebirthDate")));
         patientService.savePatient(patientDTO);
         resp.sendRedirect("/patients");
     }

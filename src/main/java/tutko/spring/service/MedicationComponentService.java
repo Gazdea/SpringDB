@@ -9,17 +9,21 @@ import tutko.spring.repositories.MedicationComponentRepositories;
 @Service
 public class MedicationComponentService {
 
+    private final MedicationComponentRepositories medicationComponentRepositories;
+
     @Autowired
-    private MedicationComponentRepositories medicationComponentRepositories;
+    public MedicationComponentService(MedicationComponentRepositories medicationComponentRepositories) {
+        this.medicationComponentRepositories = medicationComponentRepositories;
+    }
 
     public MedicationComponentDTO saveMedicationComponent(MedicationComponentDTO medicationComponentDTO) {
-        return MedicationComponentMapper.toDTO(medicationComponentRepositories.save(MedicationComponentMapper.toEntity(medicationComponentDTO)));
+        return new MedicationComponentMapper().toDTO(medicationComponentRepositories.save(new MedicationComponentMapper().toEntity(medicationComponentDTO)));
     }
 
     public void deleteMedicationComponent(int medicationId, int componentId) {
         MedicationComponentDTO medicationComponentDTO = new MedicationComponentDTO();
         medicationComponentDTO.setMedicationId(medicationId);
         medicationComponentDTO.setComponentId(componentId);
-        medicationComponentRepositories.delete(MedicationComponentMapper.toEntity(medicationComponentDTO));
+        medicationComponentRepositories.delete(new MedicationComponentMapper().toEntity(medicationComponentDTO));
     }
 }

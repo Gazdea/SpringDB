@@ -14,15 +14,15 @@ class PrescriptionEntityTest {
         MedicationEntity medicationEntity = new MedicationEntity();
 
         PrescriptionEntity prescription = new PrescriptionEntity();
-        prescription.setPrescription_id(1);
+        prescription.setPrescriptionId(1);
         prescription.setDosage("test");
-        prescription.setDate_prescribed(new Date(1234));
+        prescription.setDatePrescribed(new Date(1234));
         prescription.setPatientEntity(patientEntity);
         prescription.setMedicationEntity(medicationEntity);
 
-        assertEquals(prescription.getPrescription_id(), 1);
+        assertEquals(prescription.getPrescriptionId(), 1);
         assertEquals(prescription.getDosage(), "test");
-        assertEquals(prescription.getDate_prescribed(), new Date(1234));
+        assertEquals(prescription.getDatePrescribed(), new Date(1234));
         assertEquals(prescription.getPatientEntity(), patientEntity);
         assertEquals(prescription.getMedicationEntity(), medicationEntity);
     }

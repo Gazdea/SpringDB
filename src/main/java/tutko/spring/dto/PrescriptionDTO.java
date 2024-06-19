@@ -5,10 +5,10 @@ import java.sql.Date;
 
 public class PrescriptionDTO {
     private int prescriptionID;
-    private Date date_of_prescribed;
+    private Date dateOfPrescribed;
     private String dosage;
-    private int patient_id;
-    private int medicine_id;
+    private int patientId;
+    private int medicineId;
 
     public PrescriptionDTO() {
 
@@ -23,30 +23,30 @@ public class PrescriptionDTO {
         return this;
     }
 
-    public int getPatient_id() {
-        return patient_id;
+    public int getPatientId() {
+        return patientId;
     }
 
-    public PrescriptionDTO setPatient_id(int patient_id) {
-        this.patient_id = patient_id;
+    public PrescriptionDTO setPatientId(int patientId) {
+        this.patientId = patientId;
         return this;
     }
 
-    public int getMedicine_id() {
-        return medicine_id;
+    public int getMedicineId() {
+        return medicineId;
     }
 
-    public PrescriptionDTO setMedicine_id(int medicine_id) {
-        this.medicine_id = medicine_id;
+    public PrescriptionDTO setMedicineId(int medicineId) {
+        this.medicineId = medicineId;
         return this;
     }
 
-    public Date getDate_of_prescribed() {
-        return date_of_prescribed;
+    public Date getDateOfPrescribed() {
+        return dateOfPrescribed;
     }
 
-    public PrescriptionDTO setDate_of_prescribed(Date date_of_prescribed) {
-        this.date_of_prescribed = date_of_prescribed;
+    public PrescriptionDTO setDate_of_prescribed(Date dateOfPrescribed) {
+        this.dateOfPrescribed = dateOfPrescribed;
         return this;
     }
 

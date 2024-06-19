@@ -17,10 +17,10 @@ public class MedicationComponentMapperTest extends TestCase {
         medicationComponent.setComponentId(0);
 
         final ComponentEntity componentEntity = new ComponentEntity();
-        componentEntity.setComponent_id(0);
+        componentEntity.setComponentId(0);
 
         final MedicationEntity medicationEntity = new MedicationEntity();
-        medicationEntity.setMedication_id(0);
+        medicationEntity.setMedicationId(0);
 
         MedicationComponentId medicationComponentId = new MedicationComponentId();
         medicationComponentId.setMedicationId(0);
@@ -32,7 +32,7 @@ public class MedicationComponentMapperTest extends TestCase {
         expectedResult.setId(medicationComponentId);
 
         // Run the test
-        final MedicationComponentDTO result = MedicationComponentMapper.toDTO(expectedResult);
+        final MedicationComponentDTO result = new MedicationComponentMapper().toDTO(expectedResult);
 
         // Verify the results
         assertEquals(medicationComponent.getMedicationId(), result.getMedicationId());
@@ -47,10 +47,10 @@ public class MedicationComponentMapperTest extends TestCase {
         medicationComponent.setComponentId(0);
 
         final ComponentEntity componentEntity = new ComponentEntity();
-        componentEntity.setComponent_id(0);
+        componentEntity.setComponentId(0);
 
         final MedicationEntity medicationEntity = new MedicationEntity();
-        medicationEntity.setMedication_id(0);
+        medicationEntity.setMedicationId(0);
 
         MedicationComponentId medicationComponentId = new MedicationComponentId();
         medicationComponentId.setMedicationId(0);
@@ -62,9 +62,9 @@ public class MedicationComponentMapperTest extends TestCase {
         expectedResult.setId(medicationComponentId);
 
         // Run the test
-        final MedicationComponentEntity result = MedicationComponentMapper.toEntity(medicationComponent);
+        final MedicationComponentEntity result = new MedicationComponentMapper().toEntity(medicationComponent);
 
         // Verify the results
-        assertEquals(expectedResult.getComponentEntity().getComponent_id(), result.getComponentEntity().getComponent_id());
+        assertEquals(expectedResult.getComponentEntity().getComponentId(), result.getComponentEntity().getComponentId());
     }
 }

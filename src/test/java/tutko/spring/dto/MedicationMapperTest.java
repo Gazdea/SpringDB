@@ -23,12 +23,12 @@ public class MedicationMapperTest extends TestCase {
         final MedicationEntity expectedResult = new MedicationEntity();
         expectedResult.setDescription("description");
         expectedResult.setName("name");
-        expectedResult.setMedication_id(0);
+        expectedResult.setMedicationId(0);
         expectedResult.setMedicationComponentEntities(medicationComponentEntity);
         expectedResult.setPrescriptionEntities(prescriptionEntity);
 
         // Run the test
-        final MedicationDTO result = MedicationMapper.toDTO(expectedResult);
+        final MedicationDTO result = new MedicationMapper().toDTO(expectedResult);
 
         // Verify the results
         assertEquals(medicationDTO.getName(), result.getName());
@@ -47,12 +47,12 @@ public class MedicationMapperTest extends TestCase {
         final MedicationEntity expectedResult = new MedicationEntity();
         expectedResult.setDescription("description");
         expectedResult.setName("name");
-        expectedResult.setMedication_id(0);
+        expectedResult.setMedicationId(0);
         expectedResult.setMedicationComponentEntities(medicationComponentEntity);
         expectedResult.setPrescriptionEntities(prescriptionEntity);
 
         // Run the test
-        final MedicationEntity result = MedicationMapper.toEntity(medicationDTO);
+        final MedicationEntity result = new MedicationMapper().toEntity(medicationDTO);
 
         // Verify the results
         assertEquals(expectedResult.getName(), result.getName());

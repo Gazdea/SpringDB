@@ -11,7 +11,6 @@ import tutko.spring.dto.MedicationDTO;
 import tutko.spring.service.MedicationService;
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet("/medications/*")
@@ -55,7 +54,7 @@ public class MedicationServlet extends HttpServlet {
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         MedicationDTO medicationDTO = new MedicationDTO();
-        medicationDTO.setMedication_id(Integer.parseInt(req.getParameter("updatemedicationId")));
+        medicationDTO.setMedicationId(Integer.parseInt(req.getParameter("updatemedicationId")));
         medicationDTO.setName(req.getParameter("updatename"));
         medicationDTO.setDescription(req.getParameter("updatedescription"));
         medicationService.saveMedication(medicationDTO);

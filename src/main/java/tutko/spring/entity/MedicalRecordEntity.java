@@ -7,31 +7,33 @@ import jakarta.persistence.*;
 public class MedicalRecordEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int record_id;
+    @Column(name = "record_id")
+    private int recordId;
 
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "patient_id")
     private PatientEntity patientEntity;
 
-    private String record_details;
+    @Column(name = "record_details")
+    private String recordDetails;
 
     public MedicalRecordEntity() {}
 
-    public int getRecord_id() {
-        return record_id;
+    public int getRecordId() {
+        return recordId;
     }
 
-    public MedicalRecordEntity setRecord_id(int record_id) {
-        this.record_id = record_id;
+    public MedicalRecordEntity setRecordId(int recordId) {
+        this.recordId = recordId;
         return this;
     }
 
-    public String getRecord_details() {
-        return record_details;
+    public String getRecordDetails() {
+        return recordDetails;
     }
 
-    public MedicalRecordEntity setRecord_details(String record_details) {
-        this.record_details = record_details;
+    public MedicalRecordEntity setRecordDetails(String recordDetails) {
+        this.recordDetails = recordDetails;
         return this;
     }
 

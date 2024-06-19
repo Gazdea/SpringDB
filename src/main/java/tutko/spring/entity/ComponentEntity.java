@@ -1,16 +1,15 @@
 package tutko.spring.entity;
 
 import jakarta.persistence.*;
-
 import java.util.List;
-import java.util.Objects;
 
 @Entity
 @Table(name = "components")
 public class ComponentEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int component_id;
+    @Column(name = "component_id")
+    private int componentId;
 
     private String name;
 
@@ -27,12 +26,12 @@ public class ComponentEntity {
         this.medicationComponentEntities = medicationComponentEntities;
         return this;
     }
-    public int getComponent_id() {
-        return component_id;
+    public int getComponentId() {
+        return componentId;
     }
 
-    public ComponentEntity setComponent_id(int component_id) {
-        this.component_id = component_id;
+    public ComponentEntity setComponentId(int componentId) {
+        this.componentId = componentId;
         return this;
     }
 

@@ -1,9 +1,7 @@
 
-
-java:S2259"HA "NullPointerException" could be thrown; "patientDTO" is nullable here.(ôµÏøÿÿÿÿ8¶ââí2J$bf8f6fc4-981b-408e-871f-2aa540dd3b5e
-
-java:S2259"EA "NullPointerException" could be thrown; "patient" is nullable here.(â¯Æüÿÿÿÿ8¶ââí2J$cc662124-4e94-48ef-a1ba-60cd5be8d942
-}
-java:S1118":Add a private constructor to hide the implicit public one.(ê”¸ä8Æ½Éë2J$fec9ec73-060a-477d-9cca-5d27e51a8c6c
-p	java:S108")Either remove or fill this block of code.(’Î¦ùÿÿÿÿ8Ç½Éë2J$128641da-5adf-4f26-8210-b4d447fb336a
-k	java:S108")Either remove or fill this block of code.(Å™ÙÍ8È½Éë2J$6af96c9c-5450-4712-a6c5-659705658214
+‹
+java:S2259"HA "NullPointerException" could be thrown; "patientDTO" is nullable here.(ÁÓ‡¹8ûƒÑÿ‚2J$ce9e2402-29eb-4fc1-9cb8-3eefc8b0c15f
+ˆ
+java:S2259"EA "NullPointerException" could be thrown; "patient" is nullable here.(ÀĞ¶Ü8ûƒÑÿ‚2J$b85fb89d-98a7-48d6-8585-ec9a4e3530fc
+p	java:S108")Either remove or fill this block of code.(’Î¦ùÿÿÿÿ8ıƒÑÿ‚2J$abe5bfe4-13ae-4679-ab5b-2e6c0a59f5d9
+k	java:S108")Either remove or fill this block of code.(Å™ÙÍ8şƒÑÿ‚2J$737848b9-f249-4f34-98ee-a2ccc87d0984

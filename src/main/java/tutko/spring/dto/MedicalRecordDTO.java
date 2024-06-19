@@ -1,37 +1,38 @@
 package tutko.spring.dto;
 
 public class MedicalRecordDTO {
-    private int record_id;
-    private String record_details;
-    private int patient_id;
+    private int recordId;
+    private String recordDetails;
+    private int patientId;
+
     public MedicalRecordDTO() {
 
     }
 
-    public int getPatient_id() {
-        return patient_id;
+    public int getPatientId() {
+        return patientId;
     }
 
-    public MedicalRecordDTO setPatient_id(int patient_id) {
-        this.patient_id = patient_id;
+    public MedicalRecordDTO setPatientId(int patientId) {
+        this.patientId = patientId;
         return this;
     }
 
-    public int getRecord_id() {
-        return record_id;
+    public int getRecordId() {
+        return recordId;
     }
 
-    public MedicalRecordDTO setRecord_id(int record_id) {
-        this.record_id = record_id;
+    public MedicalRecordDTO setRecordId(int recordId) {
+        this.recordId = recordId;
         return this;
     }
 
-    public String getRecord_details() {
-        return record_details;
+    public String getRecordDetails() {
+        return recordDetails;
     }
 
-    public MedicalRecordDTO setRecord_details(String record_details) {
-        this.record_details = record_details;
+    public MedicalRecordDTO setRecordDetails(String recordDetails) {
+        this.recordDetails = recordDetails;
         return this;
     }
 

@@ -11,7 +11,7 @@ public class PrescriptionDTOTest extends TestCase {
     @Test
     public void testDate_of_prescribedGetterAndSetter() {
         prescriptionDTOUnderTest.setDate_of_prescribed(new Date(1234));
-        assertEquals(new Date(1234), prescriptionDTOUnderTest.getDate_of_prescribed());
+        assertEquals(new Date(1234), prescriptionDTOUnderTest.getDateOfPrescribed());
     }
 
     @Test
@@ -24,15 +24,15 @@ public class PrescriptionDTOTest extends TestCase {
     @Test
     public void testMedicationIDGetterAndSetter() {
         final int medicationID = 0;
-        prescriptionDTOUnderTest.setMedicine_id(medicationID);
-        assertEquals(medicationID, prescriptionDTOUnderTest.getMedicine_id());
+        prescriptionDTOUnderTest.setMedicineId(medicationID);
+        assertEquals(medicationID, prescriptionDTOUnderTest.getMedicineId());
     }
 
     @Test
     public void testPatientIDGetterAndSetter() {
         final int patientID = 0;
-        prescriptionDTOUnderTest.setPatient_id(patientID);
-        assertEquals(patientID, prescriptionDTOUnderTest.getPatient_id());
+        prescriptionDTOUnderTest.setPatientId(patientID);
+        assertEquals(patientID, prescriptionDTOUnderTest.getPatientId());
     }
 
     @Test

@@ -41,8 +41,8 @@ public class MedicationComponentServlet extends HttpServlet {
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        int medicationId = (Integer.parseInt(req.getParameter("deletemedication_id")));
-        int componentId = (Integer.parseInt(req.getParameter("deletecomponent_id")));
+        int medicationId = (Integer.parseInt(req.getParameter("deletemedicationId")));
+        int componentId = (Integer.parseInt(req.getParameter("deletecomponentId")));
         medComponentService.deleteMedicationComponent(medicationId, componentId);
         resp.sendRedirect("/medications");
     }

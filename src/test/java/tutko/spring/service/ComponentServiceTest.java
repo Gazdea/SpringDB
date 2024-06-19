@@ -13,11 +13,8 @@ import tutko.spring.dto.ComponentMapper;
 import tutko.spring.entity.ComponentEntity;
 import tutko.spring.repositories.ComponentRepositories;
 
-import java.io.IOException;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;

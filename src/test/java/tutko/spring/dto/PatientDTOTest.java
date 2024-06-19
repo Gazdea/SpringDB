@@ -8,19 +8,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PatientDTOTest {
 
-    private PatientDTO patientDTOUnderTest = new PatientDTO();
+    private final PatientDTO patientDTOUnderTest = new PatientDTO();
 
     @Test
     void testBirth_dateGetterAndSetter() {
-        patientDTOUnderTest.setBirth_date(new Date(1234));
-        assertEquals(new Date(1234), patientDTOUnderTest.getBirth_date());
+        patientDTOUnderTest.setBirthDate(new Date(1234));
+        assertEquals(new Date(1234), patientDTOUnderTest.getBirthDate());
     }
 
     @Test
     void testMedical_recordGetterAndSetter() {
         final MedicalRecordDTO medical_record = new MedicalRecordDTO();
-        patientDTOUnderTest.setMedical_record(medical_record);
-        assertEquals(medical_record, patientDTOUnderTest.getMedical_record());
+        patientDTOUnderTest.setMedicalRecord(medical_record);
+        assertEquals(medical_record, patientDTOUnderTest.getMedicalRecord());
     }
 
     @Test
@@ -33,7 +33,7 @@ public class PatientDTOTest {
     @Test
     void testPatient_idGetterAndSetter() {
         final int patient_id = 0;
-        patientDTOUnderTest.setPatient_id(patient_id);
-        assertEquals(patient_id, patientDTOUnderTest.getPatient_id());
+        patientDTOUnderTest.setPatientId(patient_id);
+        assertEquals(patient_id, patientDTOUnderTest.getPatientId());
     }
 }

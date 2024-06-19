@@ -10,11 +10,13 @@ import java.util.List;
 public class PatientEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int patient_id;
+    @Column(name = "patient_id")
+    private int patientId;
 
     private String name;
 
-    private Date birth_date;
+    @Column(name = "birth_date")
+    private Date birthDate;
 
     @OneToOne(mappedBy = "patientEntity", fetch = FetchType.EAGER)
     private MedicalRecordEntity medicalRecordEntity;
@@ -31,12 +33,12 @@ public class PatientEntity {
         return this;
     }
 
-    public int getPatient_id() {
-        return patient_id;
+    public int getPatientId() {
+        return patientId;
     }
 
-    public PatientEntity setPatient_id(int patient_id) {
-        this.patient_id = patient_id;
+    public PatientEntity setPatientId(int patientId) {
+        this.patientId = patientId;
         return this;
     }
 
@@ -49,12 +51,12 @@ public class PatientEntity {
         return this;
     }
 
-    public Date getBirth_date() {
-        return birth_date;
+    public Date getBirthDate() {
+        return birthDate;
     }
 
-    public PatientEntity setBirth_date(Date birth_date) {
-        this.birth_date = birth_date;
+    public PatientEntity setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
         return this;
     }
 

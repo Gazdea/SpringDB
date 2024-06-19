@@ -23,18 +23,18 @@ class MedicalRecordRepositoriesTest {
     @Test
     public void testSaveAndFindMedicalRecord() {
         MedicalRecordEntity medicalRecordEntity = new MedicalRecordEntity();
-        medicalRecordEntity.setRecord_details("test");
+        medicalRecordEntity.setRecordDetails("test");
         medicalRecordRepositories.save(medicalRecordEntity);
 
-        MedicalRecordEntity found = medicalRecordRepositories.findById(medicalRecordEntity.getRecord_id()).orElse(null);
+        MedicalRecordEntity found = medicalRecordRepositories.findById(medicalRecordEntity.getRecordId()).orElse(null);
         assertNotNull(medicalRecordEntity);
-        assertEquals(medicalRecordEntity.getRecord_details(), found.getRecord_details());
+        assertEquals(medicalRecordEntity.getRecordDetails(), found.getRecordDetails());
     }
 
     @Test
     public void findAll() {
         MedicalRecordEntity medicalRecordEntity = new MedicalRecordEntity();
-        medicalRecordEntity.setRecord_details("test");
+        medicalRecordEntity.setRecordDetails("test");
         medicalRecordRepositories.save(medicalRecordEntity);
         List<MedicalRecordEntity> list = medicalRecordRepositories.findAll();
 
@@ -45,25 +45,25 @@ class MedicalRecordRepositoriesTest {
     @Test
     public void delete() {
         MedicalRecordEntity medicalRecordEntity = new MedicalRecordEntity();
-        medicalRecordEntity.setRecord_details("test");
+        medicalRecordEntity.setRecordDetails("test");
         medicalRecordRepositories.save(medicalRecordEntity);
-        medicalRecordRepositories.deleteById(medicalRecordEntity.getRecord_id());
-        MedicalRecordEntity found = medicalRecordRepositories.findById(medicalRecordEntity.getRecord_id()).orElse(null);
+        medicalRecordRepositories.deleteById(medicalRecordEntity.getRecordId());
+        MedicalRecordEntity found = medicalRecordRepositories.findById(medicalRecordEntity.getRecordId()).orElse(null);
         assertNull(found);
     }
 
     @Test
     public void update() {
         MedicalRecordEntity medicalRecordEntity = new MedicalRecordEntity();
-        medicalRecordEntity.setRecord_details("test");
+        medicalRecordEntity.setRecordDetails("test");
         medicalRecordRepositories.save(medicalRecordEntity);
 
-        MedicalRecordEntity found = medicalRecordRepositories.findById(medicalRecordEntity.getRecord_id()).orElse(null);
-        found.setRecord_details("test2");
+        MedicalRecordEntity found = medicalRecordRepositories.findById(medicalRecordEntity.getRecordId()).orElse(null);
+        found.setRecordDetails("test2");
         medicalRecordRepositories.save(found);
 
-        MedicalRecordEntity result = medicalRecordRepositories.findById(found.getRecord_id()).orElse(null);
+        MedicalRecordEntity result = medicalRecordRepositories.findById(found.getRecordId()).orElse(null);
 
-        assertNotEquals(result.getRecord_details(), medicalRecordEntity.getRecord_details());
+        assertNotEquals(result.getRecordDetails(), medicalRecordEntity.getRecordDetails());
     }
 }
